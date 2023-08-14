@@ -1,17 +1,22 @@
 /* :root {} */
 
 
-/* background image, will swap out with image if I have time.  */
-bg-image {
-    background-color: gold;
+.bg-image {
+    background-image: url(https://images.unsplash.com/photo-1556056504-5c7696c4c28d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=976&q=80);
+    background-position: cover;
+    background-size: cover;
+    background-repeat: none;
 }
 
 /* TRANSPARENT MAIN BLUE SCREEN */
-.mainBluebScreen {
+.mainBlueScreen {
     background-color: hsla(240, 100%, 50%, 0.356);
 }
 
 /* TRANSPARENT BLUE AROUND SMALLER AREAS */
-.smallBlueScreen {
+.blue-btn {
     background-color: hsla(240, 100%, 59%, 0.356);
 }
+
+
+/* https: //images.unsplash.com/photo-1556056504-5c7696c4c28d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=976&q=80 */
