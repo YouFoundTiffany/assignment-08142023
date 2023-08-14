@@ -5,3 +5,13 @@
 bg-image {
     background-color: gold;
 }
+
+/* TRANSPARENT MAIN BLUE SCREEN */
+.mainBluebScreen {
+    background-color: hsla(240, 100%, 50%, 0.356);
+}
+
+/* TRANSPARENT BLUE AROUND SMALLER AREAS */
+.smallBlueScreen {
+    background-color: hsla(240, 100%, 59%, 0.356);
+}
