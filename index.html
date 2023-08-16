@@ -15,17 +15,17 @@
 
 <!-- SCOREBOARD -->
 
-<body class="container-fluid bg-image blue-btn font-Grad">
-    <div class="row justify-content-center p-5 m-5">
+<body class="ovrflw-hidden container-fluid bg-image btn font-Grad m-0">
+    <div class="row justify-content-center p-5 m-5 pt-2 border border-warning">
         <div class="col-12 p-4"></div>
         <div class="row justify-content-end">
 
             <!-- RESET BUTTON -->
-            <button class="btn btn-primary col-2" onclick="reset()">reset</button>
+            <button class="btn btn-primary col-2 shdw" onclick="reset()">RESET</button>
         </div>
         <div class="col-12 p-4"></div>
         <!-- Blue Scoreboard -->
-        <div class="row mainBlueScreen col-6 p-3 justify-content-around rounded-top rounded-bottom">
+        <div class="row mainBlueScreen col-6 p-3 justify-content-around rounded-top rounded-bottom shdw">
             <div class="col-12 p-4"></div>
 
             <!-- HOME -->
@@ -35,8 +35,8 @@
             </div>
             <!-- AWAY -->
             <div class="points col-6 p-1 text-center">
-                <h1 class="fw-bold">AWAY</h1>
-                <h1 class="fw-bold" id="awayScore">00</h1>
+                <h1 class="fw-bold text-warning">AWAY</h1>
+                <h1 class="fw-bold text-warning" id="awayScore">00</h1>
             </div>
             <div class="col-12 p-4"></div>
         </div>
@@ -47,16 +47,16 @@
                 <div class="col-12 p-4"></div>
                 <div class="row justify-content-between font-Grad text-warning">
                     <!-- SCORE 1 POINT -->
-                    <button class="blue-btn col-3 p-2 m-1 fw-bold text-warning"
+                    <button class="blue-btn col-3 p-2 m-1 fw-bold text-warning shdw"
                         onclick="homePointsOne()">home+1</button>
-                    <button class="blue-btn col-3 p-2 m-1 fw-bold text-warning"
+                    <button class="blue-btn col-3 p-2 m-1 fw-bold text-warning shdw"
                         onclick="awayPointsOne()">away+1</button>
                 </div>
                 <!-- SCORE 3 POINTS -->
-                <div class="row justify-content-between font-Grad text-warning">
-                    <button class="blue-btn col-3 p-2 m-1 fw-bold text-warning"
+                <div class="row justify-content-between text-warning">
+                    <button class="blue-btn col-3 p-2 m-1 fw-bold text-warning shdw"
                         onclick="homePointsThree()">home+3</button>
-                    <button class="blue-btn col-3 p-2 m-1 fw-bold text-warning"
+                    <button class="blue-btn col-3 p-2 m-1 fw-bold text-warning shdw"
                         onclick="awayPointsThree()">away+3</button>
                 </div>
             </div>

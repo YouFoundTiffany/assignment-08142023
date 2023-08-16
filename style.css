@@ -3,6 +3,9 @@
     background-position: cover;
     background-size: cover;
     background-repeat: none;
+    height: auto;
+    width: auto;
+    overflow: hidden;
 }
 
 /* TRANSPARENT MAIN BLUE SCREEN */
@@ -22,4 +25,12 @@
 
 .txtOut2 {
     -webkit-text-stroke: 2px #816103;
+}
+
+.shdw {
+    box-shadow: 10px 5px 8px black;
+}
+
+.ovrflw-hidden {
+    overflow: hidden;
 }
