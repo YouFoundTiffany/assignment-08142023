@@ -15,14 +15,15 @@ function homePointsOne() {
     console.log('home +1')
     home += 1
     // let elem = document.getElementById('homeScore')
-    homeScoreElm.innerText = home
+    homeScoreElm.innerText = home.toString().padStart(2, '0');
+    maxScore()
 }
 // PLUS THREE
 function homePointsThree() {
     console.log('home +3')
     home += 3
     // let elem = document.getElementById('homeScore')
-    homeScoreElm.innerText = home
+    homeScoreElm.innerText = home.toString().padStart(2, '0');
     maxScore()
 }
 
@@ -32,7 +33,7 @@ function awayPointsOne() {
     console.log('away +1')
     away += 1
     // let elem = document.getElementById('awayScore')
-    awayScoreElm.innerText = away
+    awayScoreElm.innerText = away.toString().padStart(2, '0');
     maxScore()
 }
 // PLUS THREE
@@ -40,7 +41,7 @@ function awayPointsThree() {
     console.log('away +3')
     away += 3
     // let elem = document.getElementById('awayScore')
-    awayScoreElm.innerText = away
+    awayScoreElm.innerText = away.toString().padStart(2, '0');
     maxScore()
 }
 
@@ -50,14 +51,14 @@ function reset() {
     home = 0
     away = 0
     // let elem = document.getElementById('homeScore')
-    homeScoreElm.innerText = home
+    homeScoreElm.innerText = home.toString().padStart(2, '0');
     // let elem = document.getElementById('awa7Score')
-    awayScoreElm.innerText = home
+    awayScoreElm.innerText = away.toString().padStart(2, '0');
 }
 
 // MAX SCORE
 function maxScore() {
-    if (home >= 10) {
+    if (home >= 20) {
         console.log("home wins")
         alert("Home Wins!")
         reset()
@@ -67,9 +68,4 @@ function maxScore() {
         reset()
     }
 }
-
-// DRAW FUNCTION, SCORING
-// function scoring {
-
-// }
 

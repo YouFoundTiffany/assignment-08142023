@@ -6,48 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
         integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Nosifer&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>⚽ScoreBoard</title>
 </head>
 
 <!-- SCOREBOARD -->
 
-<body class="container-fluid bg-image">
+<body class="container-fluid bg-image blue-btn font-Grad">
     <div class="row justify-content-center p-5 m-5">
+        <div class="col-12 p-4"></div>
         <div class="row justify-content-end">
 
             <!-- RESET BUTTON -->
             <button class="btn btn-primary col-2" onclick="reset()">reset</button>
         </div>
-        <div class="row mainBlueScreen col-6 justify-content-between">
+        <div class="col-12 p-4"></div>
+        <!-- Blue Scoreboard -->
+        <div class="row mainBlueScreen col-6 p-3 justify-content-around rounded-top rounded-bottom">
+            <div class="col-12 p-4"></div>
 
             <!-- HOME -->
-            <div class="points col-3 justify-contents-center">
-                <h1>HOME</h1>
-                <h1 id="homeScore">00</h1>
+            <div class="points col-6 p-1 text-center">
+                <h1 class="fw-bold text-warning">HOME</h1>
+                <h1 class="fw-bold text-warning" id="homeScore">00</h1>
             </div>
             <!-- AWAY -->
-            <div class="points col-3 justify-content-center">
-                <H1>AWAY</H1>
-                <h1 id="awayScore">00</h1>
+            <div class="points col-6 p-1 text-center">
+                <h1 class="fw-bold">AWAY</h1>
+                <h1 class="fw-bold" id="awayScore">00</h1>
             </div>
+            <div class="col-12 p-4"></div>
         </div>
+        <section>
 
-
-        <!-- SCORING BUTTONS -->
-        <div class="row justify-content-between">
+            <!-- SCORING BUTTONS -->
             <div class="row justify-content-between">
-                <!-- SCORE 1 POINT -->
-                <button class="blue-btn col-3" onclick="homePointsOne()">home+1</button>
-                <button class="blue-btn col-3" onclick="awayPointsOne()">away+1</button>
+                <div class="col-12 p-4"></div>
+                <div class="row justify-content-between font-Grad text-warning">
+                    <!-- SCORE 1 POINT -->
+                    <button class="blue-btn col-3 p-2 m-1 fw-bold text-warning"
+                        onclick="homePointsOne()">home+1</button>
+                    <button class="blue-btn col-3 p-2 m-1 fw-bold text-warning"
+                        onclick="awayPointsOne()">away+1</button>
+                </div>
+                <!-- SCORE 3 POINTS -->
+                <div class="row justify-content-between font-Grad text-warning">
+                    <button class="blue-btn col-3 p-2 m-1 fw-bold text-warning"
+                        onclick="homePointsThree()">home+3</button>
+                    <button class="blue-btn col-3 p-2 m-1 fw-bold text-warning"
+                        onclick="awayPointsThree()">away+3</button>
+                </div>
             </div>
-            <!-- SCORE 3 POINTS -->
-            <div class="row justify-content-between">
-                <button class="blue-btn col-3" onclick="homePointsThree()">home+3</button>
-                <button class="blue-btn col-3" onclick="awayPointsThree()">away+3</button>
-            </div>
-        </div>
     </div>
+    </section>
 
 
 
